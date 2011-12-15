@@ -4,4 +4,5 @@
   %p 
     Name:
     = "#{room.name} (#{room.size})"
-
+    %a{:href => "/make_booking/#{room.id}"}
+      Book
