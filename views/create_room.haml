@@ -1,0 +1,14 @@
+%p Create a room:
+
+%form{:action => "/create_meeting_room", :method => "post"}
+  %p
+    Name:
+    %input{:type => "text", :name => "name"}
+  %p
+    Size:
+    %input{:type => "text", :name => "size"}
+  %p
+    Is active
+    %input{:type => "checkbox", :name => "is_active", :value => "true"}
+  %p
+    %input{:type => "submit"}
